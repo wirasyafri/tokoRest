@@ -1,0 +1,5 @@
+SELECT `item`.nama,`ukuran`.ukuran,`merk`.nama_merk,`jenis_kelamin`.jenis_kelamin FROM `item` 
+JOIN `ukuran`  on `item`.id_ukuran = `ukuran`.id_ukuran 
+join `merk`    on `item`.id_merk = `merk`.id_merk 
+join `tipe`    on `item`.id_tipe = `tipe`.id_tipe 
+join `jenis_kelamin`  on `item`.id_jeniskelamin = `jenis_kelamin`.`id_jeniskelamin` where `item`.id_item = 1
